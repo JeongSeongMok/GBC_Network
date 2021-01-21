@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 {
     int serv_sock, clnt_sock; // 서버 소켓과 클라이언트 소켓 선언
     struct sockaddr_in serv_adr, clnt_adr; // 서버 어드레스와 클라이언트 어드레스 구조체 선언
-    int clnt_adr_sz; 클라이언트 어드레스 사이즈
+    int clnt_adr_sz;// 클라이언트 어드레스 사이즈
     pthread_t t_id;
     if(argc!=2) { // main함수의 파라미터로 포트를 입력해야 함
         printf("Usage : %s <port>\n", argv[0]);
